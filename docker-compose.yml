@@ -6,7 +6,7 @@ services:
       dockerfile: docker/Dockerfile
     restart: 'always'
     volumes:
-    - ./database/data:/var/lib/mysql/data
+    - ./database/data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: flaskdb
@@ -19,6 +19,8 @@ services:
     build:
       context: ./app
       dockerfile: docker/Dockerfile
+    volumes:
+      - ./app:/app
     depends_on:
       - db
     ports:
