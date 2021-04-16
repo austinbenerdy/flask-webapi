@@ -15,4 +15,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r app/requirements.txt
       - name: Run tests with pyunit
-        run: python -m unittest discover
+        run: python -m unittest discover app/test "*_test.py"
