@@ -1,4 +1,4 @@
-/.idea
+.idea
 *.pyc
 app/.env
 database/data
