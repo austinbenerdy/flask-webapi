@@ -7,7 +7,7 @@ class TestUserController(unittest.TestCase):
         self.seq = list(range(10))
 
     def test_read(self):
-        print('Calling test_read.')
+        print('Begin test for test_read.')
         random.shuffle(self.seq)
         self.seq.sort()
         self.assertEqual(self.seq, list(range(10)))
