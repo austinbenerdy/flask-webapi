@@ -4,3 +4,4 @@ alembic
 python-dotenv
 mysql-connector-python
 mysqlclient
+dependency-injector

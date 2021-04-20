@@ -11,7 +11,7 @@ def token_required(func):
         if (apikey):
             flask.app.current_user = "USERNAME"
         else:
-            flask.app.current_user = None
+            flask.app.current_user = False
         return func(*args, **kwargs)
 
     return decorated_function
